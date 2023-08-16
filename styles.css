@@ -1,0 +1,14 @@
+.banner img {
+
+    height: 50%;
+    width: auto;
+}
+
+.container h2 {
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    border-color: #007BFF;
+}
