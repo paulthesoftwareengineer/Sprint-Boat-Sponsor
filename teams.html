@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprint Boat Racing Teams</title>
+    <title>Teams - Sprint Boat Racing Hub</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS styles go here */
+        .team-card {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
-
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Sprint Boat Racing Hub</a>
-        <!-- ... rest of the navigation ... -->
+        <a class="navbar-brand" href="#">Sprint Boat Racing News</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Boat Anatomy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sponsors</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Banner Image Container -->
@@ -29,27 +50,106 @@
         </div>
     </div>
 
+    <!-- Main Content Container -->
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <h2>The Latest Run Down</h2>
+                <!-- Content goes here... -->
+            </div>
+            <!-- Image -->
+            <div class="col-md-5">
+                <img src="./images/sprintboat-action.jpg" alt="Sprint boats racing" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+
+    <!-- Spotlight on Teams -->
+    <div class="container mt-5">
+        <h3>Spotlight on Teams</h3>
+        <div class="row">
+            <!-- Team Alpha -->
+            <div class="col-md-6 team-card">
+                <div class="card">
+                    <img src="./images/team1.jpg" alt="Team Alpha" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Team Alpha</h4>
+                        <p class="card-text">With over a decade in Sprint Boat Racing, Team Alpha has secured numerous titles and is known for their state-of-the-art boats and skilled racers.</p>
+                        <a href="#" class="btn btn-outline-dark">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add other team spotlights as needed... -->
+        </div>
+    </div>
+    
     <!-- Teams Section -->
     <div class="container mt-5">
         <h2>Meet the Teams</h2>
         <p>Discover the best teams in Sprint Boat Racing. Learn about their histories, achievements, and racers.</p>
+        <div class="row">
+            <!-- Example Team Section -->
+            <div class="col-md-4 team-card">
+                <div class="card">
+                    <img src="./images/team2.jpg" alt="Team Example" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Team Example</h4>
+                        <p class="card-text">Description of the team. They are known for...</p>
+                        <a href="#" class="btn btn-outline-dark">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more team sections dynamically here using a loop -->
+        </div>
+    </div>
 
-        <!-- Team 1 -->
-        <div class="row align-items-center mt-4">
+    <!-- Newsletter Signup and Sponsorship Call-to-Action -->
+    <div class="container mt-5">
+        <div class="row">
             <div class="col-md-6">
-                <img src="./images/team1.jpg" alt="Team Alpha" class="img-fluid rounded">
+                <h4>Stay Updated!</h4>
+                <p>Join our newsletter and never miss an update on your favorite races and teams.</p>
+                <form action="/subscribe" method="post" class="d-flex">
+                    <input type="email" name="email" placeholder="Enter your email" class="form-control mr-2">
+                    <button type="submit" class="btn btn-success">Subscribe</button>
+                </form>
             </div>
             <div class="col-md-6">
-                <h3>Team Alpha</h3>
-                <p>With over a decade in Sprint Boat Racing, Team Alpha has secured numerous titles and is known for their state-of-the-art boats and skilled racers.</p>
-                <a href="#" class="btn btn-outline-dark">Learn More</a>
+                <h4>Support the Sport!</h4>
+                <p>Make a difference in the world of Sprint Boat Racing. Become a sponsor and get exclusive benefits.</p>
+                <button class="btn btn-primary">Become a Sponsor</button>
             </div>
         </div>
-
-        <!-- Team 2 (and so on...) -->
-        <!-- Repeat the structure above for each team you want to display. -->
-
     </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: contact@sprintboat.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter for the latest updates and news.</p>
+                    <form class="form-inline">
+                        <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
